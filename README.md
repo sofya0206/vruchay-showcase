@@ -1,10 +1,17 @@
 # Vruchay — named certificates at scale, with verification
 
-**Live:** [vruchay.ru](https://vruchay.ru) · **Status:** in production, paid plans · **Source:** private (commercial product). This repository is the public overview.
+**Live:** [vruchay.ru](https://vruchay.ru) · **Status:** in production, paid contracts signed · **My role:** full-stack developer, built the product end to end · **Source:** private (commercial product). This repository is the public overview.
 
 Organisations upload a list of participants and a certificate template. Vruchay renders a personal PDF for every person, sends it by email, and gives each document a public page where anyone can check that it is genuine.
 
 ![Vruchay landing page](assets/landing.png)
+
+## Results
+
+- **From idea to paying customers in about two months.** The first commit was on 31 July 2026. The product is now live, and organisations have signed paid contracts.
+- **Built for a real client from day one.** Vruchay started as a commission from a sports-tech team that works with a sports federation and needed to issue competition diplomas. I turned that one-off task into a product any organisation can use.
+- **Paid plans** from 29 000 to 149 000 ₽ a year, plus a pay-per-event option. A fixed annual price fits how federations, schools and universities budget and buy.
+- **Production-grade from the start:** 176 test files, security scanning on every push, staging and production pipelines.
 
 ## Why it exists
 
@@ -57,7 +64,14 @@ flowchart LR
 
 ## My role
 
-I am the lead developer. I wrote most of the code (~78% of commits): the product architecture, the template editor and the rendering pipeline, the organiser dashboard and the landing page. I work together with co-founder [Nikita Borozdov](https://github.com/borozdov).
+I am the full-stack developer and wrote most of the code (~78% of commits). I built the whole product end to end:
+
+- **Backend:** NestJS API, PostgreSQL schema, the render queue and worker, mailing, payments, verification and audit.
+- **Frontend:** the template editor, the organiser dashboard and the landing page.
+- **Infrastructure:** Docker, CI/CD, security scanning, backups.
+- **Product:** market research, competitor analysis and the pricing model.
+
+I work together with co-founder [Nikita Borozdov](https://github.com/borozdov), who brought the first client.
 
 I build with AI coding agents. I write the rules, architecture decisions and tests that keep them in check, and I review every change. The repository's `CLAUDE.md` is that rulebook.
 
